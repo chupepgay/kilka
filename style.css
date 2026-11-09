@@ -1,0 +1,127 @@
+
+/* Основные настройки */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f3f1ed;
+    color: #292929;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+}
+
+/* Верхняя часть сайта */
+header {
+    background-color: #263b35;
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #d4ded8;
+}
+
+/* Основной контейнер */
+.container {
+    max-width: 950px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+/* Карточки */
+.card {
+    background-color: white;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+/* Заголовки */
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    color: #263b35;
+    margin-top: 0;
+}
+
+/* Текст */
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Буквица */
+.intro::first-letter {
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #b47c52;
+    line-height: 1;
+    margin-right: 0.5rem;
+}
+
+/* Цитата */
+blockquote {
+    margin: 1.5rem 0;
+    padding: 1.5rem 2rem;
+    background-color: #f3f1ed;
+    border-left: 5px solid #b47c52;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #263b35;
+}
+
+/* Блоки с преимуществами */
+.features {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.feature {
+    flex: 1;
+    min-width: 180px;
+    padding: 1.5rem;
+    background-color: #edf1ed;
+    border-radius: 12px;
+}
+
+.feature h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #263b35;
+    font-size: 1.1rem;
+}
+
+/* Нижняя часть сайта */
+footer {
+    text-align: center;
+    background-color: #263b35;
+    color: #d4ded8;
+    padding: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Для телефонов */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+}
